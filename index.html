@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Cartão de Crédito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-imagens">
+        <a href="https://www.shift4shop.com/credit-card-logos.html">
+            <img class="imagem-cards" alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-5_b.png" width="518" height="59" border="0" />
+        </a>
+    </div>
+    <div class="center">
+        <div class="card">
+            <div class="card-content">
+                <h1>Insira seus dados</h1>
+                <form id="form-cartao">
+                    <label for="numero-cartao">Número do Cartão:</label>
+                    <input type="text" id="numero-cartao" name="numero-cartao" placeholder="Número do cartão" required>
+                    
+                    <label for="data-validade">Data de Validade (MM/AA):</label>
+                    <input type="text" id="data-validade" name="data-validade" placeholder="MM/AA" required>
+                    
+                    <label for="codigo-seguranca">Código de Segurança (CVV):</label>
+                    <input type="text" id="codigo-seguranca" name="codigo-seguranca" placeholder="CVV" required>
+                    
+                    <button type="submit">Validar</button>
+                </form>
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Ádria Belém &copy; 2025. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
